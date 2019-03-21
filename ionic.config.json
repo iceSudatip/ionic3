@@ -1,0 +1,7 @@
+{
+  "name": "CartoonApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

@@ -1,0 +1,32 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-title text-center>Coming soon</ion-title>
+      
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content class="tutorial-page">
+
+    <ion-slides pager>
+      <ion-slide *ngFor="let slide of slides">
+        <ion-toolbar>
+          <ion-buttons end>
+            <button ion-button color="primary">EPO1</button>
+          </ion-buttons>
+        </ion-toolbar>
+        <img [src]="slide.image" class="slide-image"/>
+        <h2 class="slide-title" [innerHTML]="slide.title"></h2>
+        <p [innerHTML]="slide.description"></p>
+      </ion-slide>
+      <ion-slide>
+        <ion-toolbar>
+        </ion-toolbar>
+        <img src="../../assets/imgs/comingsoon.png" class="slide-image"/>
+        <br>
+        
+      </ion-slide>
+    </ion-slides>
+  </ion-content>

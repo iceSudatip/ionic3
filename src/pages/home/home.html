@@ -1,0 +1,91 @@
+
+<ion-header>
+  <ion-toolbar>
+  <ion-title text-center>Cartoon</ion-title>
+</ion-toolbar>
+</ion-header>
+
+<!--
+<ion-content padding text-center>
+<img src="../../assets/imgs/total.jpg" width ="250px">
+<p>
+Your Welcome.
+</p>
+<ion-list>
+
+  <ion-item>
+    <ion-label floating>Username</ion-label>
+    <ion-input type="text" [(ngModel)]="id"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label floating>Password</ion-label>
+    <ion-input type="password" [(ngModel)]="pass"></ion-input>
+  </ion-item>
+
+</ion-list>
+<button ion-button block (click)="next()">
+Login 
+</button>
+<ion-label class="color-red">ไม่ได้ลืมรหัสผ่าน</ion-label> -->
+<ion-content no-bounce>
+  <ion-slides>
+
+      <ion-slide>
+          <img  class="pic" src="../../assets/imgs/doraemon.jpg">
+          
+          <ion-title>" ความเป็นเพื่อนของเราไม่ใช่เรื่องบังเอิญนะ</ion-title>
+          <br>
+          <ion-title>บางทีมันก็ถูกกำหนดไว้แล้วจริงๆ "</ion-title>
+          <br>
+          <ion-title>#คำคมโดราเอม่อน</ion-title>
+          <p>' DORAEMON '</p>
+      </ion-slide>
+
+      <ion-slide>
+          <img src="../../assets/imgs/pokemon.jpg">
+          
+          <ion-title>" แก๊งร็อคเก็ต : ถ้าถามว่าเราคือใคร... เราก็</ion-title>
+          <br>
+          <ion-title>พร้อมที่จะแถลงไข...ผู้เผยความชั่ว สรรจธรรม</ion-title>
+          <br>
+          <ion-title>และความดี...ตัวโกงผู้แสนน่ารักและทรงสเน่ห์ ..."</ion-title>
+          <br>
+          <ion-title>"มุซาชิ..." "โคจิโร่..." "ไวท์ฮอล... </ion-title>
+          <br>
+          <ion-title>พรุ่งนี้ที่แสนสดใสรอเราอยู่..."</ion-title>
+          <br>
+          <ion-title>#วลีเด็ดโปเกม่อน</ion-title>
+
+          
+          <p>' POKEMON ' </p>
+      </ion-slide>
+
+      <ion-slide>
+          <img src="../../assets/imgs/digimon.jpg">
+         
+          <ion-title>" ในระหว่างที่ ไทจิและเพื่อนในโรงเรียนกำลังตั้งค่ายนั้นเอง </ion-title>
+          <br>
+          <ion-title>ก็มีวัตถุประหลาดหล่นลงมาจากฟากฟ้า</ion-title>
+          <br>
+          <ion-title>เป็นเครื่องมือแปลก ๆ ที่ไม่คุ้นตา หลังจากนั้นพวกเขา</ion-title>
+          <br>
+          <ion-title> ก็โดนดูดไปยังโลกดิจิตอล เพื่อปราบเหล่าร้าย</ion-title>
+          <br>
+          <ion-title>ที่กำลังทำให้ดิจิตอลเวิลด์ปั่นป่วน "</ion-title>
+          <br>
+          <ion-title>#สปอยดิจิม่อน</ion-title>
+          <p>DIGIMON</p>
+      </ion-slide>
+  </ion-slides>
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="ios-apps"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab (click)="next2()"><ion-icon name="contact"></ion-icon></button>      
+    </ion-fab-list>
+  </ion-fab>
+  <ion-card *ngIf="userData">
+  <ion-card-header>{{userData.username}}</ion-card-header>
+  </ion-card>
+</ion-content>
+

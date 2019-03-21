@@ -1,0 +1,155 @@
+  
+  
+    <!--
+        <ion-card>
+          <img src="imgs/130476_0_620.jpg"/>
+          <div class="card-title">São Paulo</div>
+          <div class="card-subtitle">41 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="imgs/130476_0_620.jpg"/>
+          <div class="card-title">Amsterdam</div>
+          <div class="card-subtitle">64 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="imgs/130476_0_620.jpg"/>
+          <div class="card-title">San Francisco</div>
+          <div class="card-subtitle">72 Listings</div>
+        </ion-card>
+      
+        <ion-card>
+          <img src="imgs/130476_0_620.jpg"/>
+          <div class="card-title">Madison</div>
+          <div class="card-subtitle">28 Listings</div>
+        </ion-card>
+      -->
+      <!-- <ion-list>
+          <ion-item>
+            <ion-thumbnail item-start>
+              <img src="../../assets/imgs/doraemon.jpg">
+            </ion-thumbnail>
+            <h2>Doraemon</h2>
+            <p>Doraemon • 1969</p>
+            <button ion-button clear item-end (click)="next()">View</button>
+          </ion-item>
+
+          <ion-item>
+              <ion-thumbnail item-start>
+                <img src="../../assets/imgs/pokemon.jpg">
+              </ion-thumbnail>
+              <h2>Pokemon</h2>
+              <p>Pokemon • 1999</p>
+              <button ion-button clear item-end (click)="next_pokemon()">View</button>
+            </ion-item>
+
+            <ion-item>
+                <ion-thumbnail item-start>
+                  <img src="../../assets/imgs/digimon.jpg">
+                </ion-thumbnail>
+                <h2>Digimon</h2>
+                <p>Digimon • 1988</p>
+                <button ion-button clear item-end (click)="next_digimon()">View</button>
+              </ion-item>
+        </ion-list>
+      -->
+      <ion-header>
+          <ion-toolbar>
+              <button ion-button menuToggle>
+                  <ion-icon name="menu"></ion-icon>
+              </button>
+              <ion-title text-center>{{'Developer' | translate}}</ion-title>
+          </ion-toolbar>
+        </ion-header>
+
+        <ion-content class="card-background-page">
+            <br>
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/bow.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Sunisa Thammasoon'| translate}}</h2>
+                  <p>Project Monitoring using Trello </p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up" ></ion-icon>   {{tap}} Like</ion-badge>
+                 <ion-icon name="logo-facebook" (click)="bowurl()" > Sunisa Thammasoon</ion-icon>
+            </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/chanon.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Chanon Pornsiriwong'|translate}}</h2>
+                  <p>UI Programming</p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>   {{tap}} Like</ion-badge>
+                 <ion-icon name="logo-facebook"(click)="chanonurl()"> Chanon Pornsiriwong</ion-icon>
+            </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/eye.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Tawita Wichachai'|translate}}</h2>
+                  <p>Digital Prototype and UX design </p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>   {{tap}} Like</ion-badge>
+                 <ion-icon name="logo-facebook"(click)="eyeurl()"> Eye Tawita</ion-icon>
+            </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/chin.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Pasit Thanadamkerng'|translate}}</h2>
+                  <p>Database Models & Programming</p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>   {{tap}} Like</ion-badge>
+                 <ion-icon name="logo-facebook"(click)="chinurl()"> Pasit Thanadamkerng</ion-icon>
+            </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/ice.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Sudatip Taweesuk'|translate}}</h2>
+                  <p>Cordova built + Software versioning</p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>   {{tap}} Like</ion-badge>
+                 
+                 <ion-icon name="logo-facebook" (click)="iceurl()"> จุ๊กะจิ๊ จุ๊กะจิ๊</ion-icon>
+                 
+            </ion-item>
+            </ion-list>
+
+            <ion-list>
+                <ion-item>
+                  <ion-thumbnail item-start>
+                    <img src="../../assets/imgs/noona.jpg">
+                  </ion-thumbnail>
+                  <h2>{{'Nattharikan Chuaymit'|translate}}</h2>
+                  <p>I18n for internationalization</p>
+                 <ion-badge item-end (tap)="tapEvent($event)"><ion-icon ios="ios-thumbs-up" md="md-thumbs-up"></ion-icon>   {{tap}} Like</ion-badge>
+                 <ion-icon name="logo-facebook"(click)="noonaurl()"> Nattharikan Chuaymit</ion-icon>
+            </ion-item>
+            </ion-list>
+
+
+                        
+                    
+                       
+
+              
+          
+          </ion-content>
+        
+       
+        
+
+    
+ 
